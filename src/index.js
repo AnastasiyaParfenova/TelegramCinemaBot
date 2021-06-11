@@ -32,9 +32,7 @@ mongoose.connect(config.DB_URL, { //передача порта для рабо�
      //--------Событие в callback при получении фильмов и добавления их в избранное-------------
     const ACTION_TYPE = {
         TOGGLE_FAV_FILM: 'tff' //переключения добавления и удаления из избранного
-      //  SHOW_CINEMAS: 'sc', 
-      //  SHOW_CINEMAS_MAP: 'scm',
-       // SHOW_FILMS: 'sf'
+    
     }
 
     //----------Добавление данных в БД--------------
@@ -196,19 +194,10 @@ bot.on('callback_query', query => { //обработчик callback запрос
     }
     const { type } = data
 
-    // if (type === ACTION_TYPE.SHOW_CINEMAS_MAP) {
-    //     const {lat, lon} = data
-    //     bot.sendLocation(query.message.chat.id, lat, lon)
-
-    // } else if (type === ACTION_TYPE.SHOW_CINEMAS) {
-    //     sendCinemasByQuery(userId, {uuid: {'$in': data.cinemaUuids}})
-
      if (type === ACTION_TYPE.TOGGLE_FAV_FILM) {
         toggleFavoriteFilm(userId, query.id, data) //функция работы с избранным
 
-     } //else if (type === ACTION_TYPE.SHOW_FILMS) {
-    //     sendFilmsByQuery(userId, {uuid: {'$in': data.filmUuids}})
-    // }
+     } 
 
 })
 
@@ -342,13 +331,3 @@ function showFavouriteFilms(chatId, telegramId) { //функция для пер
 
     }).catch(e => console.log(e))
 }
-
-// function sendCinemasByQuery(userId, query) {
-//     Cinema.find(query).then(cinemas => {
-
-//         const html = cinemas.map((c,i) => {
-//         return `<b>${i+1}</b> ${c.name} - /c${c.uuid}`
-// }).join('\n')
-//         sendHTML(userId, html, 'home')
-//     })
-// }
