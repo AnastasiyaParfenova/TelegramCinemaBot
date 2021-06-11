@@ -1,0 +1,152 @@
+{
+    "films": [
+      {
+        "uuid": "f123",
+        "name": "Заклятие",
+        "type": "action",
+        "year": "2013",
+        "rate": 7.4,
+        "length": "1:52",
+        "country": "США",
+        "link": "https://www.kinopoisk.ru/film/468994",
+        "picture": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/90adfafb-1976-454a-afb8-24375f155fa4/800x800",
+        "cinemas": ["c123", "c345"]
+      },
+      {
+        "uuid": "f234",
+        "name": "Детские игры",
+        "type": "action",
+        "year": "2019",
+        "rate": 5.697,
+        "length": "1:30",
+        "country": "США",
+        "link": "https://www.kinopoisk.ru/film/1179256/",
+        "picture": "https://avatars.mds.yandex.net/get-kinopoisk-image/1629390/a85865b5-4bb6-45c4-9b3c-77be85188142/960x960",
+        "cinemas": ["c123", "c456"]
+      },
+      {
+        "uuid": "f345",
+        "name": "Астрал",
+        "type": "action",
+        "year": "2010",
+        "rate": 6.75,
+        "length": "1:43",
+        "country": "США",
+        "link": "https://www.kinopoisk.ru/film/495892/",
+        "picture": "https://avatars.mds.yandex.net/get-kinopoisk-image/1900788/6df5ec93-2ff4-4144-b31f-f5c7",
+        "cinemas": ["c345", "c234"]
+      },
+      {
+        "uuid": "f456",
+        "name": "Не бойся темноты",
+        "type": "action",
+        "year": "2010",
+        "rate": 5.823,
+        "length": "1:39",
+        "country": "США",
+        "link": "https://www.kinopoisk.ru/film/432417/",
+        "picture": "https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/856c5905-6288-4cfe-8303-b8a2c5d58728/800x800",
+        "cinemas": ["c345", "c456"]
+      },
+      {
+        "uuid": "f567",
+        "name": "Зубная фея",
+        "type": "comedy",
+        "year": "2009",
+        "rate": 6.105,
+        "length": "1:37",
+        "country": "США",
+        "link": "https://www.kinopoisk.ru/film/406397/",
+        "picture": "https://i.pinimg.com/736x/eb/b6/83/ebb683623216bb6986e82bb9f5f70bdd.jpg",
+        "cinemas": ["c345", "c567", "c123"]
+      },
+      {
+        "uuid": "f678",
+        "name": "Няньки",
+        "type": "comedy",
+        "year": "1994",
+        "rate": 7.157,
+        "length": "1:33",
+        "country": "США",
+        "link": "https://www.kinopoisk.ru/film/18120/",
+        "picture": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3qpAULNyVfsLn36MnkfxRHpmpxJ.jpg",
+        "cinemas": ["c234", "c123"]
+      },
+      {
+        "uuid": "f789",
+        "name": "1+1",
+        "type": "comedy",
+        "year": "2011",
+        "rate": 8.812,
+        "length": "1:52",
+        "country": "Франция",
+        "link": "https://www.kinopoisk.ru/film/11-2011-535341",
+        "picture": "https://st.kp.yandex.net/images/film_iphone/iphone360_535341.jpg",
+        "cinemas": ["c567", "c345", "c456"]
+      },
+      {
+        "uuid": "f890",
+        "name": "Один дома",
+        "type": "comedy",
+        "year": "1990",
+        "rate": 8.239,
+        "length": "1:43",
+        "country": "США",
+        "link": "https://www.kinopoisk.ru/film/8124/",
+        "picture": "https://picfiles.alphacoders.com/974/97490.jpg",
+        "cinemas": ["c456", "c123"]
+      }
+    ],
+    "cinemas": [
+      {
+        "uuid": "c123",
+        "name": "Prada 3D",
+        "location": {
+          "latitude": 56.793350,
+          "longitude": 60.520659
+        },
+        "url": "http://academ-trc.ru/кинотеатр_prada",
+        "films": ["f890", "f678", "f567", "f123", "f234"]
+      },
+      {
+        "uuid": "c234",
+        "name": "Гринвич Синема",
+        "location": {
+          "latitude": 56.828705,
+          "longitude": 60.598880
+        },
+        "url": "https://grinvich-cinema.ru",
+        "films": ["f345", "f678"]
+      },
+      {
+        "uuid": "c345",
+        "name": "Премьер зал",
+        "location": {
+          "latitude": 56.797265,
+          "longitude": 60.581914
+        },
+        "url": "https://new.premierzal.ru/theatre/premer-zal-granat/schedule",
+        "films": ["f123", "f345", "f456", "f567", "f789"]
+      },
+      {
+        "uuid": "c456",
+        "name": "Пассаж Синема",
+        "location": {
+          "latitude": 56.836335,
+          "longitude": 60.595472
+        },
+        "url": "https://passage-cinema.ru",
+        "films": ["f234", "f456", "f789", "f890"]
+      },
+      {
+        "uuid": "c567",
+        "name": "Синема Парк",
+        "location": {
+          "latitude": 56.832648,
+          "longitude": 60.582217
+        },
+        "url": "https://kinoteatr.ru/raspisanie-kinoteatrov/ekaterinburg/alatyr/",
+        "films": ["f567", "f789"]
+      }
+    ]
+  }
